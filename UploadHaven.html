@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>UploadHaven Token Redirect</title>
+    </head>
+    <body>
+        <h1 style="margin: 0px;">UploadHaven Token Redirect</h1><p></p>
+        <input type="text" id="in" placeholder="Enter Token"></input>
+        <button onclick="on()">Submit</button>
+        <p></p><div id="res">
+            Nothing yet...
+        </div>
+        <script>
+            function on() {
+                document.getElementById("res").innerHTML = "<a href='https://uploadhaven.com/download/" + document.getElementById("in").value + "' target='_blank'>Redirect Me</a>"
+            }            
+        </script>
+    </body>
+</html>
